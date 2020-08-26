@@ -1,18 +1,18 @@
-const width = window.innerWidth;
-const height = window.innerHeight;
+const game = new Game
 
 function preload() {
     game.preload()
 }
 
 function setup() {
-
+createCanvas(WIDTH, HEIGHT)
+game.setup()
 }
 
 function draw() {
-    game.draw();
+game.draw()
 }
 
 function keyPressed() {
-    
+
 }
