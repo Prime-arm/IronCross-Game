@@ -10,20 +10,20 @@ class Obstacle {
     }
   
 
-    collision(playerInfo) {
-        let obstacleX = this.x + this.width / 2;
-        let obstacleY = this.y + this.height / 2;
-        let playerX = playerInfo.x + playerInfo.width / 2;
-        let playerY = playerInfo.y + playerInfo.height /2;
+    // collision(playerInfo) {
+    //     let obstacleX = this.x + this.width / 2;
+    //     let obstacleY = this.y + this.height / 2;
+    //     let playerX = playerInfo.x + playerInfo.width / 2;
+    //     let playerY = playerInfo.y + playerInfo.height /2;
         // console.log(obstacleX, obstacleY, playerX, playerY);
     
-        if (dist(obstacleX, obstacleY, playerX, playerY) < 70)
-        {
-          return true;
-        } else {
-          return false
-        }
-      }
+      //   if (dist(obstacleX, obstacleY, playerX, playerY) < 70)
+      //   {
+      //     return true;
+      //   } else {
+      //     return false
+      //   }
+      // }
 
     draw() {
         this.x += this.speed
