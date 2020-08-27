@@ -1,6 +1,6 @@
 const score1 = document.querySelector("#score1");
 const score2 = document.querySelector("#score2");
-const startPage = document.querySelector(".start");
+const startPage = document.querySelector(".overlay");
 let gameMode = "off";
 
 function preload() {

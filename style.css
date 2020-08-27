@@ -24,7 +24,7 @@ body {
     margin-left: 200px;
 } */
 
-.start {
+.overlay {
     background-size: cover;
     background-color: orange;
     color: white ;
@@ -124,7 +124,19 @@ body {
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	align-content: center;
+}
+
+.fullscr {
+    color: deepskyblue;
+}
+
+.p1controls {
+    margin-right: 100px;
+}
+
+.p2controls {
+    margin-left: 100px;
 }
