@@ -9,13 +9,13 @@ class Game {
     }
 
     preload() {
-        this.backgroundImg = loadImage("../Media/bcg.png")
+        this.backgroundImg = loadImage("Media/bcg.png")
 
         this.carsRun = [
             {
               width: 120,
               height: 70,
-              image: loadImage("../Media/car01_b.png"),
+              image: loadImage("Media/car01_b.png"),
               x: WIDTH,
               y: HEIGHT - 640,
               speed: -8
@@ -24,7 +24,7 @@ class Game {
             {
               width: 120,
               height: 70,
-              image: loadImage("../Media/car03_a.png"),
+              image: loadImage("Media/car03_a.png"),
               x: - 70,
               y: HEIGHT - 530,
               speed: 7
@@ -33,7 +33,7 @@ class Game {
             {
               width: 120,
               height: 70,
-              image: loadImage("../Media/tdrc01_car04_d.png"),
+              image: loadImage("Media/tdrc01_car04_d.png"),
               x: WIDTH,
               y: HEIGHT - 390,
               speed: -6
@@ -42,14 +42,14 @@ class Game {
             {
               width: 120,
               height: 70,
-              image: loadImage("../Media/tdrc01_car07_f.png"),
+              image: loadImage("Media/tdrc01_car07_f.png"),
               x: - 70,
               y: HEIGHT - 280,
               speed: 4
             }]
         
-        this.playerImg = loadImage('../Media/tdrc01_car09_f.png');
-        this.player2Img = loadImage('../Media/tdrc01_car07_d.png');
+        this.playerImg = loadImage('Media/tdrc01_car09_f.png');
+        this.player2Img = loadImage('Media/tdrc01_car07_d.png');
     }
 
     setup() {
