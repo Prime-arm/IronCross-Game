@@ -85,12 +85,13 @@ class Game {
               
               this.obstacles.splice(index, 1);
               this.player.y = height - 70;
+              crashSound.play();
             }
             if (this.isCollision2(this.player2, car)) {
               
               this.obstacles.splice(index, 1);
               this.player2.y2 = height - 70;
-
+              crashSound.play();
             }
           });
           }

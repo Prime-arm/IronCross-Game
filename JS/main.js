@@ -1,14 +1,23 @@
 const score1 = document.querySelector("#score1");
 const score2 = document.querySelector("#score2");
 const startPage = document.querySelector(".overlay");
+let gameMusic
+let scoreSound
+let crashSound
 let gameMode = "off";
 
 function preload() {
+    gameMusic = loadSound("Media/Sounds/gamemusic.mp3");
+    scoreSound = loadSound("Media/Sounds/score.wav");
+    crashSound = loadSound("Media/Sounds/crash.wav");
     game.preload()
 }
 
 function setup() {
 createCanvas(WIDTH, HEIGHT)
+gameMusic.setVolume(0.2);
+gameMusic.loop();
+crashSound.setVolume(0.6);
 game.setup()
 }
 
@@ -51,34 +60,26 @@ function keyPressed() {
     // enter
     gameMode = "on";
     startPage.style.visibility = "hidden";
+    gameMusic.play();
   }
 
  // 'Space' to reload the page
   if (keyCode === 32) {
     window.location.reload();
   }
-  // When the game is over, Press 'R' to reset the score and return players to original position
 
-  // if (gameOver && keyCode === 82) {
-  //   gameOver = false;
-  //   gameMode = "on";
-  //   document.querySelector("#gameover").style.visibility = "hidden";
-  //   score1.innerHTML = 0;
-  //   score2.innerHTML = 0;
-  //   game.player.y = HEIGHT - 70;
-  //   game.player2.y2 = HEIGHT - 70;
-  // }
+  // Add score when player reach other side
 
-  // Add score when players reach a specific height of the canvas
-
-  if (game.player.y <= HEIGHT - 650) {
+  if (game.player.y <= HEIGHT - 750) {
     game.player.y = HEIGHT - 70;
     addScore(score1, game.player);
+    scoreSound.play();
   }
 
-  if (game.player2.y2 <= HEIGHT - 650) {
+  if (game.player2.y2 <= HEIGHT - 750) {
     game.player2.y2 = HEIGHT - 70;
     addScore(score2, game.player2);
+    scoreSound.play();
   }
 
  
