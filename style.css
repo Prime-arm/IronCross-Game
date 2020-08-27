@@ -1,3 +1,129 @@
 body {
     font-family: 'Orbitron', sans-serif;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: center;
+    background-image: url(./Media/bcgmain.gif);
+}
+
+.header {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+    align-content: center;
+    color: white;
+}
+
+/* h1 {
+    /* margin-right: 200px;
+    margin-left: 200px;
+} */
+
+.start {
+    background-size: cover;
+    background-color: orange;
+    color: white ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #gameover {
+    color: white;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    visibility: visible;
+    background-color: green;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .enter-word {
+    color: green;
+  }
+
+  .pizza {
+      color: darkred;
+  }
+
+  .candy {
+      color: rgb(233, 5, 81);
+  }
+
+  #space {
+      color: royalblue;
+  }
+  
+  #instructions {
+      color: royalblue;
+  }
+
+  .startinner {
+    justify-content: center;
+  } 
+
+  .startimage {
+      width: 20vw;
+      height: 30vh;
+      /* margin-left: 200px; */
+
+  }
+
+  .note {
+      color: red
+  }
+
+  #player-1 {
+      color: darksalmon;
+      margin-right: 300px;
+      /* font-size: xx-large; */
+  }
+
+  #player-2 {
+    color: darksalmon;
+    margin-left: 300px;
+    /* font-size: xx-large; */
+}
+
+.frontmiddle {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+#heading-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.controlstext {
+    display: flex;
+    justify-content: center;
+}
+
+.controls {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
 }

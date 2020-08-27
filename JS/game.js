@@ -71,34 +71,7 @@ class Game {
         this.player.drawPlayer();
         this.player2.drawPlayer();
 
-        // if (frameCount % 60 === 0) {
-        //     this.obstacles.push(new Obstacle(this.carsRun[3]));
-        //   }
-      
-          // this.obstacles.forEach((obstacle) => {
-          //   obstacle.draw();
-          // });
-
-          // this.obstacles = this.obstacles.filter((obstacle) => {
-          //   if (obstacle.collision(this.player)) {
-          //     return false
-          //   } else {
-          //     return true
-          //   }
-          // })
-
-          // this.obstacles = this.obstacles.filter((obstacle) => {
-          //   if (obstacle.collision(this.player2)) {
-          //     return false
-          //   } else {
-          //     return true
-              
-          //   }
-          // })
-          
-          // this.obstacles.forEach(())
-
-          if (frameCount > 60 && frameCount % 60 === 0) {
+          if (frameCount % 30 === 0) {
             let randomIndex = Math.floor(Math.random() * this.carsRun.length);
             let randomObstacle = this.carsRun[randomIndex];
     
@@ -113,7 +86,7 @@ class Game {
               this.obstacles.splice(index, 1);
               this.player.y = height - 70;
             }
-            if (this.isCollision(this.player2, car)) {
+            if (this.isCollision2(this.player2, car)) {
               
               this.obstacles.splice(index, 1);
               this.player2.y2 = height - 70;
@@ -133,7 +106,24 @@ class Game {
         
         
             let dist = distance(player, car);
-            if (dist <= 70) {
+            if (dist <= 80) {
+              return true;
+            }
+            return false;
+          }
+
+          isCollision2(player2, car) {
+        
+            const distance = (player2, car) => {
+              return Math.sqrt(
+                (player2.x2 + player2.width / 2 - (car.x + car.width / 2)) ** 2 +
+                  (player2.y2 + player2.height / 2 - (car.y + car.height / 2)) ** 2
+              );
+            };
+        
+        
+            let dist = distance(player2, car);
+            if (dist <= 80) {
               return true;
             }
             return false;

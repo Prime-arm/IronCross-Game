@@ -17,9 +17,50 @@
 </head>
 
 <body>
-    <h1>IRONCROSS</h1>
 
+  <div class="start">
+    <h1 class="note">NOTE: For the best gaming permorfance, please swith to <strong>FULL SCREEN MODE</strong></h1>
     
+    <div class="startinner">
+      <h1 id="heading-1">IronCross! Cross it and Win it!</h1>
+      
+      <div class="frontmiddle">
+      <h1 id="instructions">Cross the street 5 times and reach the score of 5 to win some <span class="pizza">PIZZA</span>!</h1>
+      <img class="startimage" src="./Media/startimg.png" alt="">
+      
+      <div>
+      <h1 id="enter">Press <span class="enter-word">ENTER</span> to Start the Game</h1>
+      <h2>Press <span id="space">SPACE</span> to Restart</h2>
+      </div>
+
+    </div>
+<h1 class="controlstext">CONTROLS</h1>
+      <div class="controls">
+      <div>
+      <h2>Player 1</h2>
+      <img src="./Media/wasd.png" alt="">
+      </div>
+      <div>
+      <h2>Player 2</h2>
+      <img src="./Media/arrowkeys.png" alt="">
+      </div>
+      </div>
+
+    </div>
+  </div>
+
+    <!-- score -->
+    <div class="header">
+      <h2 id="player-1">Player 1: <span id="score1">0</span></h2>
+      <h1>IRONCROSS</h1>
+      <h2 id="player-2">Player 2: <span id="score2">0</span></h2>
+    </div>
+    
+    <!-- game over page -->
+    <div id="gameover">
+      <h1>Game Over</h1>
+      <h1 class="player-won"></h1>
+    </div>
     
     
     <script src="./JS/p5js lib/p5.play.js"></script>
