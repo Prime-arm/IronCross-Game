@@ -7,6 +7,7 @@ body {
 	align-items: center;
     align-content: center;
     background-image: url(./Media/bcgmain.gif);
+    background-repeat: no-repeat;
 }
 
 .header {
@@ -70,7 +71,7 @@ body {
   }
   
   #instructions {
-      color: royalblue;
+      color: teal;
       width: 33%;
   }
 
@@ -115,6 +116,12 @@ body {
     justify-content: center;
 }
 
+#heading-2 {
+    display: flex;
+    justify-content: center;
+    color: forestgreen;
+}
+
 .controlstext {
     display: flex;
     justify-content: center;
@@ -130,7 +137,7 @@ body {
 }
 
 .fullscr {
-    color: deepskyblue;
+    color: indigo;
 }
 
 .p1controls {
@@ -139,4 +146,14 @@ body {
 
 .p2controls {
     margin-left: 100px;
+}
+
+.p1conimg {
+    height: 80px;
+    width: 40px;
+}
+
+.p2conimg {
+    height: 80px;
+    width: 40px;
 }
