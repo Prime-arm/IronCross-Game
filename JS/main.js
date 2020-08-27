@@ -92,7 +92,7 @@ function addScore(score, player) {
   let s = Number(score.innerHTML) + 1;
   if (s >= 5) {
     console.log(`${player.name} won!`);
-    winner = player.name;
+    winner = "friendship";
     gameOver = true;
     gameMode = "off";
   }
